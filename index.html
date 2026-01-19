@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Md Sabbir Hossain</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="phone">
+
+    <div class="header"></div>
+
+    <div class="profile">
+        <img src="https://raw.githubusercontent.com/mdalimsaddser/Download/main/1768855906686.jpg" alt="Profile">
+    </div>
+
+    <div class="content">
+        <h1>Md Sabbir Hossain</h1>
+        <p>Welcome To My World 🌍</p>
+
+        <div class="links">
+            <a href="https://www.facebook.com/mdsabbir.hossain.692305" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+
+            <a href="https://www.tiktok.com/@mdridoy4888ij?_r=1&_t=ZS-93D9qZPg36d" target="_blank">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+
+            <a class="download"
+               href="https://github.com/mdalimsaddser/Download/raw/refs/heads/main/%E0%A6%86%E0%A6%9C%E0%A6%95%E0%A7%87%20%E0%A6%86%E0%A6%B2%E0%A7%8B%20%E0%A6%9D%E0%A6%B0%E0%A7%87%20%E0%A6%AA%E0%A7%9C%E0%A7%87%20%E0%A6%86%E0%A6%95%E0%A6%BE%E0%A6%B6%E0%A7%87%E0%A6%B0%20%E0%A6%A8%E0%A7%80%E0%A6%B2%20%E0%A6%98%E0%A6%B0%E0%A7%87,.mp3"
+               download>
+                <i class="fas fa-download"></i> Download MP3
+            </a>
+        </div>
+
+        <!-- MUSIC PLAYER -->
+        <div class="player">
+            <audio id="audio" src="https://github.com/mdalimsaddser/Download/raw/refs/heads/main/%E0%A6%86%E0%A6%9C%E0%A6%95%E0%A7%87%20%E0%A6%86%E0%A6%B2%E0%A7%8B%20%E0%A6%9D%E0%A6%B0%E0%A7%87%20%E0%A6%AA%E0%A7%9C%E0%A7%87%20%E0%A6%86%E0%A6%95%E0%A6%BE%E0%A6%B6%E0%A7%87%E0%A6%B0%20%E0%A6%A8%E0%A7%80%E0%A6%B2%20%E0%A6%98%E0%A6%B0%E0%A7%87,.mp3"></audio>
+            <button onclick="playPause()">
+                <i id="icon" class="fas fa-play"></i>
+            </button>
+        </div>
+
+        <div class="footer">
+            © 2026 Md Sabbir Hossain
+        </div>
+    </div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/8801840762780" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+const audio = document.getElementById("audio");
+const icon = document.getElementById("icon");
+
+function playPause(){
+    if(audio.paused){
+        audio.play();
+        icon.className = "fas fa-pause";
+    }else{
+        audio.pause();
+        icon.className = "fas fa-play";
+    }
+}
+</script>
+
+</body>
+</html>
